@@ -1,0 +1,35 @@
+package studentgroop;
+
+
+
+public class Main {
+	
+
+	public static void main(String[] args) {
+		NewCroup clas = new NewCroup();
+		Student Anna = new Student ("Anna", "Dobrova", 16, 'f',1);
+		Student Sveta = new Student("Sveta", "Ladina", 17, 'f', 1);
+		Student Alex = new Student("Alex", "Noviy", 18, 'm', 1);
+		
+		clas.addStudent(Alex);
+		clas.addStudent(Sveta);
+		clas.addStudent(Anna);
+		clas.addStudent(new Student("Vova", "Dvorik", 17, 'm', 1));
+		clas.addStudent(new Student("Evgeniy", "Borov", 17, 'm', 1));
+		clas.addStudent(new Student("Vova", "Svetliy", 17, 'm', 1));
+		clas.addStudent(new Student("Jesika", "Dall", 17, 'f', 1));
+		clas.addStudent(new Student("Jesika", "Corall", 17, 'f', 1));
+		clas.addStudent(new Student("Julia", "Fosters", 18, 'f', 1));
+		clas.addStudent(new Student("Serena", "Wander", 19, 'f', 1));
+		clas.addStudent(new Student("Bler", "Eshlie", 16, 'f', 1)); /**adding of a student to full group**/
+		//clas.addStudent(new Human("Ashly", "Simpson", 17, 'f'));/**adding of a student to full group**/
+		clas.interAdd();
+		clas.findStudent("Dvorik");
+		clas.Info();
+		
+		clas.saveToFile("Group.txt");
+		System.out.println();
+		clas.readListfromFile("Group.txt");
+	}
+
+}
