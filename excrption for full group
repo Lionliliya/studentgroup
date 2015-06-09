@@ -1,0 +1,10 @@
+package studentgroop;
+
+@SuppressWarnings("serial")
+public class FullGroupException extends Exception {
+	@Override
+	public String toString() {
+		return "group is full already. Come back next year";
+	}
+
+}
